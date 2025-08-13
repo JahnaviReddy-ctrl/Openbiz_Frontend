@@ -1,0 +1,86 @@
+{
+  "step1": [
+    {
+      "name": "aadhaar",
+      "label": "Aadhaar Number",
+      "type": "text",
+      "placeholder": "123412341234",
+      "pattern": "^\\d{12}$",
+      "required": true,
+      "validationMessage": "Aadhaar must be exactly 12 digits"
+    },
+    {
+      "name": "entrepreneurName",
+      "label": "Name of Entrepreneur",
+      "type": "text",
+      "required": true,
+      "readonly": false
+    }
+  ],
+  "step2": [
+    {
+      "name": "pan",
+      "label": "PAN",
+      "type": "text",
+      "placeholder": "AAAAA1111A",
+      "pattern": "^[A-Z]{5}[0-9]{4}[A-Z]{1}$",
+      "required": true,
+      "validationMessage": "PAN must match pattern AAAAA1111A"
+    },
+    {
+      "name": "enterpriseName",
+      "label": "Name of Enterprise / Unit",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "orgType",
+      "label": "Organization Type",
+      "type": "select",
+      "required": true,
+      "options": [
+        {
+          "value": "",
+          "label": "Select"
+        },
+        {
+          "value": "soleproprietor",
+          "label": "Sole Proprietor"
+        },
+        {
+          "value": "partnership",
+          "label": "Partnership"
+        },
+        {
+          "value": "privateltd",
+          "label": "Private Limited"
+        },
+        {
+          "value": "llp",
+          "label": "LLP"
+        }
+      ]
+    },
+    {
+      "name": "pinCode",
+      "label": "PIN Code",
+      "type": "text",
+      "pattern": "^\\d{6}$",
+      "required": true
+    },
+    {
+      "name": "state",
+      "label": "State",
+      "type": "text",
+      "required": true,
+      "readonly": true
+    },
+    {
+      "name": "city",
+      "label": "City / District",
+      "type": "text",
+      "required": true,
+      "readonly": true
+    }
+  ]
+}
